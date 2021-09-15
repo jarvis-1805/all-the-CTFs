@@ -1,0 +1,19 @@
+cat vencrypted.txt results in:
+VimCrypt~03!����r\v▒ܛ�
+                      n�,
+                         ��8)��,Z��8o���z��c�▒F{6� �%"�aucѫ��
+
+with header "VimCrypt~03" which suggests the file is encrypted using blowfish2 encryption method that uses CBF or Cipher Feedback Mode on 64-bit blocks.
+
+We can use vimdecrypt.py to decrypt the password.
+
+Command used: python3 vimdecrypt.py -d rockyou.txt vencrypted.txt
+
+Result:
+
+probable password: computer
+---------
+flag{sometimes_it_really_do_be_like_that_tho}
+
+---------
+

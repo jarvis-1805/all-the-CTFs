@@ -1,0 +1,1 @@
+visit challenge.ctf.games:30032/.well-known/
