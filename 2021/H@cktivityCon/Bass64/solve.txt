@@ -1,0 +1,5 @@
+open the file in mouspad and adjust it acoording to the visible base64:
+IGZsYWd7MzVhNWQxM2RhNmEyYWZhMGM2MmJmY2JkZDYzMDFhMGF9
+
+and convert it using cyberchef:
+flag{35a5d13da6a2afa0c62bfcbdd6301a0a}

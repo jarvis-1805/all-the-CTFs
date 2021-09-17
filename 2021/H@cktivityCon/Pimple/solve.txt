@@ -1,0 +1,2 @@
+Use online photoshop tool eg Photopea:
+flag{9a64bc4a390cb0ce31452820ee562c3f}
