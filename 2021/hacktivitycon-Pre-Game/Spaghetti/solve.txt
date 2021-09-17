@@ -1,0 +1,11 @@
+Using command "binwalk -e spaghetti.png" results in:
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             PNG image, 520 x 300, 8-bit/color RGBA, non-interlaced
+59            0x3B            Zlib compressed data, best compression
+
+There are two files in dir(_spaghetti.png.extracted) created by above command: 3B and 3B.zlib
+Using online tool to view .zlib file gives the flag:
+
+flag{wow_that_was_a_long_string_of_spaghetti}

@@ -1,0 +1,20 @@
+Using command nc challenge.ctf.games 30351 in terminal results:
+
+root@kali:~# nc challenge.ctf.games 30351
+Oh, we already sent the flag! Did you see it?
+
+After trying a couple of more tricks using pipe results:
+
+root@kali:~# nc challenge.ctf.games 30351 | cat 
+Oh, we already sent the flag! Did you see it?
+root@kali:~# nc challenge.ctf.games 30351 | echo
+
+root@kali:~#
+
+No result obtained. But with command " nc challenge.ctf.games 30351 | less " results in a vim editor with data:
+
+f^Ml^Ma^Mg^M{^Mt^Mh^Mi^Ms^M_^Mn^Me^Mt^Mc^Ma^Mt^M_^Ms^Ma^My^Ms^M_^Mm^Me^Mo^Mw^M}^MOh, we already sent the flag! Did you see it?
+
+After removing "^M" flag obtained:
+
+flag{this_netcat_says_meow}
