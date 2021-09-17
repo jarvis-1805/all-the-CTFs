@@ -1,0 +1,8 @@
+Upon Google-ing - "Jed" Sheeran
+Found the first link to soundcloud.com:
+https://soundcloud.com/user-836083929-176777888
+
+Then under the tab "Popular tracks" fount one song by "Jed Sheeran"
+Then viewing the comments of the song found:
+"Beautiful People" is a song by English singer-songwriter Ed Sheeran featuring American singer Khalid. Asylum Records UK released it on 28 June 2019, as the third single from his fourth studio album, No.6 Collaborations Project.
+flag{59e56590445321ccefb4d91bba61f16c}

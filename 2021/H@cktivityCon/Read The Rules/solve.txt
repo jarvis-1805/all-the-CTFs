@@ -1,0 +1,5 @@
+Found the flag in html file of the page by viewing the page source:
+
+<!--     Thank you for reading the rules! Your flag is:         -->
+<!--        flag{90bc54705794a62015369fd8e86e557b}              -->
+<!-- You will have to wait until the CTF starts to submit this! -->
