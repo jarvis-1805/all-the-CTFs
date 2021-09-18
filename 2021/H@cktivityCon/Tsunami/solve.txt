@@ -1,0 +1,2 @@
+Use Sonic Visualizer and add a spectrogram layer and adjust the properties to see the flag:
+flag{f8fbb2c761821d3af23858f721cc140b}
