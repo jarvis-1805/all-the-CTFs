@@ -1,5 +1,5 @@
 Bite
-50 points - Web - 162 Solves - easy
+50 points - Web - easy
 
 Author: @JohnHammond#6971
 

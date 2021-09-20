@@ -1,5 +1,5 @@
 Spaghetti
-50 points - Warmups - 83 Solves - easy
+50 points - Warmups - easy
 
 Author: @JohnHammond#6971
 

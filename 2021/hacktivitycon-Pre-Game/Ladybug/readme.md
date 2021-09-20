@@ -1,5 +1,5 @@
 Ladybug
-50 points - Web - 117 Solves - easy
+50 points - Web - easy
 
 Author: @artemis19#5698
 

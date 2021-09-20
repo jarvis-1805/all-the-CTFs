@@ -1,5 +1,5 @@
 Common Place
-50 points - Warmups - 84 Solves - easy
+50 points - Warmups - easy
 
 Author: @JohnHammond#6971
 

@@ -1,5 +1,5 @@
 CaesarMirror
-50 points - Warmups - 94 Solves - easy
+50 points - Warmups - easy
 
 Author: @JohnHammond#6971
 

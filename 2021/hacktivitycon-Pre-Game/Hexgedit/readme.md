@@ -1,5 +1,5 @@
 Hexgedit
-50 points - Warmups - 63 Solves - easy
+50 points - Warmups - easy
 
 Author: @JohnHammond#6971
 

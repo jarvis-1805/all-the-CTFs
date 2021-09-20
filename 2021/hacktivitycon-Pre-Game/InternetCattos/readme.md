@@ -1,5 +1,5 @@
 InternetCattos
-50 points - Warmups - 344 Solves - easy
+50 points - Warmups - easy
 
 Author: @JohnHammond#6971
 
