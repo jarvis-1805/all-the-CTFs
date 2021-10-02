@@ -1,0 +1,29 @@
+root@kali:~/Downloads/redpwn_CTF/crypto/baby/RsaCtfTool# ./RsaCtfTool.py -n 23519325203263800569051788832344215043304346715918641803 -e 71 --uncipher 10400286653072418349777706076384847966640064725838262071 --private
+ 
+[*] Testing key /tmp/tmp_d5w68jk.
+[*] Performing fibonacci_gcd attack on /tmp/tmp_d5w68jk.
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9999/9999 [00:00<00:00, 248078.11it/s]
+[*] Performing mersenne_primes attack on /tmp/tmp_d5w68jk.
+  0%|                                                                                                                                | 0/51 [00:00<?, ?it/s]
+[*] Performing smallq attack on /tmp/tmp_d5w68jk.
+[*] Performing factordb attack on /tmp/tmp_d5w68jk.
+[*] Attack success with factordb method !
+ 
+Results for /tmp/tmp_d5w68jk:
+ 
+Private key :
+-----BEGIN RSA PRIVATE KEY-----
+MH8CAQACGAD1jZ9WKUPUGOzKObgQD+Ja/HbyMQ8qiwIBRwIXXWEfv2nVSXIKuRJM
+GIdm5pmTFQZGL/8CDA8LQitaf3tRZxKOnQIMEFKGGjBRb2AFVwFHAgwA2PjpM/jC
+cMFMw4cCDAKHYH6mIkAg55Z+ZQIMAREg8D7b5IHFS28g
+-----END RSA PRIVATE KEY-----
+ 
+Unciphered data :
+HEX : 0x6473637b7430305f6d7563685f6d3474685f383839387d
+INT (big endian) : 9621269132073872010525638902903988134500010392708266109
+INT (little endian) : 11993657127041496499871362328745731192598296696556057444
+utf-8 : dsc{t00_much_m4th_8898}
+STR : b'dsc{t00_much_m4th_8898}'
+
+Hence the flag is:
+dsc{t00_much_m4th_8898}

@@ -1,0 +1,10 @@
+Using wireshark get the file i_COULD_have_the_flag.mp4.torrent, under File > Export > Objects > Http
+Then use command:
+strings i_COULD_have_the_flag.mp4.torrent | grep -i dsc{
+
+It results in:
+root@kali:~/Downloads# strings i_COULD_have_the_flag.mp4.torrent | grep -i dsc{
+d8:announce43:dsc{H3_1S_th3_83sT_p1r4t3_1_H4V3_3V3r_s33n}10:created by18:qBittorrent v4.3.513:creation datei1629734779e4:infod6:lengthi30704510e4:name25:i_COULD_have_the_flag.mp412:piece lengthi65536e6:pieces9380:~x
+
+The flag:
+dsc{H3_1S_th3_83sT_p1r4t3_1_H4V3_3V3r_s33n}

@@ -1,0 +1,24 @@
+Using the inspect element tool first we found a flag in the comments of the page:
+dsc{th15_15_n0t_th3_fl4g}
+But this is not the corect flag
+Lets see the source code of this page, there's a js file and a css file.
+
+Viewing the js file shows the message:
+// aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1kUXc0dzlXZ1hjUQ
+// since this a warmup, i'll let you know that this is base64 encoded
+// and you should check the yt comments of the decoded link
+
+Upon decrypting the above message, link found was:
+https://www.youtube.com/watch>v=dQw4w9WgXcQ
+Converting the link to:
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+So this was a rickroll.
+
+Lets see the css file, here we see an interesting class:
+.contain-flag::after {
+  z-index: -64209;
+  caesar-cipher: +3;
+  flag: "gvf{zh0frph_wr_ghfrqvwuxfwi}";
+}
+So lets perform ceaser-cipher with key +3, and we found the flag:
+dsc{welcome_to_deconstructf}
