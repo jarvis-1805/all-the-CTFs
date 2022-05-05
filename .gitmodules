@@ -1,0 +1,3 @@
+[submodule "2022/angstromctf"]
+	path = 2022/angstromctf
+	url = https://github.com/jarvis-1805/angstromctf.git
